@@ -1,3 +1,6 @@
 flask
+gunicorn
 requests
 openai
+python-telegram-bot
+
