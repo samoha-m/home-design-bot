@@ -21,7 +21,7 @@ def webhook():
         user_text = data["message"]["text"]
 
         response = openai.ChatCompletion.create(
-            model="gpt-4",
+            model="gpt-3.5-turbo",
             messages=[{"role": "user", "content": user_text}]
         )
         reply = response['choices'][0]['message']['content']
